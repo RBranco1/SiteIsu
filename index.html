@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>ISU</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css.css" />
+</head>
+
+<body background="Imagens/background.jpg">
+        <h1> MENU COM UMA IMAGEM SUPER LEGAL!!</h1>
+    <div class ="container">
+    <h3>Modelo OSI</h3>
+    <p> Lançado em 1970 e aprovado pela Organização Internacional para a Normalização em 1984. Foi criado com o objetivo
+        de ser um modelo padrão para
+        protocolos de comunicação, garantindo a comunicação end-to-end entre máquinas de diferentes fabricantes. Define
+        diretivas genéricas para a
+        construção de redes de computadores independente da tecnologia utilizada.
+        Esta arquitetura divide as redes de computadores e, 7 camadas sendo que em cada camada e realizada uma função
+        específica.
+    </p>
+    <ul>
+        <li ><a href ="#Fisica"> Fisica</a> </li>
+        <li ><a href ="#Dados"> Ligação de dados(data link)</a> </li>
+        <li ><a href ="#Rede"> Rede(Network)</a> </li>
+        <li ><a href ="#Transporte"> Transporte(Transport)</a> </li>
+        <li ><a href ="#Sessao"> Sessão (Session)</a> </li>
+        <li ><a href ="#Apresentacao"> Apresentação</a> </li>
+        <li ><a href ="#Aplicacao"> Aplicação (Aplication)</a> </li>
+    </ul>
+
+
+    <h3 id = "Fisica">Funcões da camada Física (Camada 1 do Modelo OSI)</h3>
+    <p>A camada Física tem a função de enviar e receber bits, através de um canal de comunicação.
+        Esta camada trabalha basicamente com as características mecânicas e elétricas do meio físico.
+        Podemos associá-la a cabos e conectores, para ajudar na semântica. Exemplo de alguns
+        dispositivos que atuam na camada física são os hubs, tranceivers, cabos, etc.</p>
+
+    <h3 id = "Dados">Funções da camada de Ligação de Dados (Camada 2 do Modelo OSI)</h3>
+    <p>A camada de ligação de dados analisa os dados recebidos do meio físico para ver se possuem algum erro e,
+        se possuírem, esse erro pode ser corrigido. Esta camada está dividida em dois subníveis:</p>
+
+    <h4>Controle de acesso ao meio (MAC – Medium Access Control) –</h4>
+
+    <p>Possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço
+        físico,
+        conhecido como endereço MAC. É esse endereço que a camada utiliza para identificar e enviar os pacotes.
+        Essa camada atua como uma interface entre a camada física e a subcamada LLC.
+    </p>
+
+    <h4>Controle lógico de licação (LLC- Logical Link Control)</h5>
+
+    <p>É nesta camada que temos o controle de fluxo dos dados na rede. É por conta dessa camada que
+        conseguimos ter vários protocolos da próxima camada
+        convivendo dentro de uma mesma rede.</p>
+
+    <h4>Controle de acesso ao meio (MAC – Medium Access Control) –</h4>
+
+    <p>Possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço
+        físico, conhecido como endereço MAC. É esse endereço que a camada utiliza para identificar e enviar os pacotes.
+        Essa camada atua como uma interface entre a camada física e a subcamada LLC.</p>
+
+
+
+
+
+
+
+    <h3 id = "Rede">Funções da camada de Rede (Camada 3 do Modelo OSI)</h3>
+
+    <p>A camada de rede tem a função de controlar a operação da rede de um modo geral. Suas principais funções são o
+        roteamento dos pacotes entre fonte e destino.</p>
+
+    <h3 id = "Transporte">Funções da camada de Transporte (Camada 4 do Modelo OSI)</h3>
+
+    <p>É esta camada que garante o envio e o recebimento dos pacotes vindos da camada 3. Ela gerencia o transporte dos
+        pacotes para garantir o sucesso no envio e no recebimento de dados.
+        Esta camada lida muito com a qualidade do serviço para que os dados sejam entregues com consistência, isto é,
+        sem erros ou duplicações. Porém nem todos os protocolos desta camada garantem a entrega da mensagem.
+        Protocolos muito comuns dessa camada são os protocolos TCP em UDP.
+
+    </p>
+
+    <h3 id = "Sessao">Funções da camada de Sessão (Camada 5 do Modelo OSI)</h3>
+    <p>
+        Está camada é responsável por estabelecer e encerrar a conexão entre hosts. É ela quem inicia e sincroniza os
+        hosts.
+        Além de realizar o estabelecimento das sessões, esta camada também provém algum suporte a elas, como registros
+        de log e realizando tarefas de segurança.
+    </p>
+
+    <h3 id = "Apresentacao">Funções da camada de Apresentação (Camada 6 do Modelo OSI)</h3>
+    <p>
+        Está é a camada responsável por fazer a tradução dos dados para que a próxima camada os use. Nesta camada temos
+        a conversão de códigos para caracteres, a conversão e compactação dos dados, além da criptografia desses dados,
+        caso necessite.
+
+    </p>
+
+    <h3 id = "Aplicacao">Funções da camada de Aplicação (Camada 7 do Modelo OSI)</h3>
+    <P>
+        A última camada do modelo OSI é a camada para consumir os dados. Nesta camada temos os programas que garantem a
+        interação humano-máquina. Nela conseguimos enviar e-mails, transferir arquivos, acessar websites, conectar
+        remotamente em outras máquinas, entre outras coisas.
+        É nesta camada que temos os protocolos mais conhecidos como o HTTP, FTP, além de serviços como o DNS.
+    </P>
+</div>
+
+
+
+
+</body>
+
+</html>
